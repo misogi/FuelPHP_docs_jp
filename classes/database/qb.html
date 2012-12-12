@@ -47,21 +47,21 @@
 			<h2 id="introduction">Query Building</h2>
 
 			<p class="note">
-				<strong>Note:</strong>
-				At the time of writing the query builder classes are reworked so they can handle multiple sql dialects.
+				<strong>メモ:</strong>
+				クエリビルダは、SQLの方言に対応する際に書かれました。
 			</p>
 			<p>
-				The abstraction of writing SQL for database queries is done by the <strong>Query Builder</strong>. The query builder
-				consists a set of classes, each handling a specific part of the query building process.
+			    <strong>Query Builder (クエリビルダ)</strong>は、データベースの問い合わせにあたり、SQL文の記述の抽象化を行います。
+				クエリビルダはいくつかクラスが分かれていて、クエリを組み立てる際にそれぞれ役割があります。
 			</p>
 			<p>
-				Using the query builder is will go unnoticed most of the times as the <a href="db.html">DB class</a> provides shortcuts for
-				creating new query builder objects. It's advised to use these methods to get the right query builder. this is common
-				practice and will keep your code readable.
+			    新しくクエリビルダオブジェクトを作る際、ほとんど <a href="db.html">DB クラス</a>が
+			    メソッドを提供しているように扱うことができ、正しいクエリビルダを得られるように導いてくれます。
+			    常識的なやり方で、コードの可読性を保ってくれます。
 			</p>
 
 			<p>
-				Here are the classes that query builder consists of:
+				クエリビルダは以下のクラスからなります。:
 			</p>
 
 			<ul>
